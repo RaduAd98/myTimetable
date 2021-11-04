@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_outline_calendar_today_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_add_module"
+            android:icon="@drawable/ic_outline_note_add_24"
+            android:title="@string/button_add_module" />
+        <item
+            android:id="@+id/nav_add_room"
+            android:icon="@drawable/ic_outline_meeting_room_24"
+            android:title="@string/button_add_room" />
+        <item
+            android:id="@+id/nav_create_group"
+            android:icon="@drawable/ic_outline_group_add_24"
+            android:title="@string/button_create_group" />
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="@string/text_logout_button"/>
+</menu>

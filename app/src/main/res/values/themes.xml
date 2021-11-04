@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyTimetable" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?colorOnPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:itemTextAppearance">@style/ItemMenuTextAppearance</item>
+        <item name="android:colorBackground">?colorOnPrimary</item>
+
+    </style>
+
+    <style name="Theme.MyTimetable.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">?colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.MyTimetable.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <style name="Theme.MyTimetable.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <style name="Theme.SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_background_day</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ItemMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FadedView">
+        <item name="background">@drawable/transparent_white_faded_background</item>
+    </style>
+
+    <style name="OpaqueView">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="ToolbarBackgroundStyle">
+        <item name="android:background">?colorOnPrimary</item>
+    </style>
+
+    <style name="ActionBarCustomTheme" parent="@style/Theme.MaterialComponents.DayNight">
+        <item name="android:statusBarColor" tools:targetApi="l">?colorOnPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:background">?colorOnPrimary</item>
+        <item name="actionBarWidgetTheme">?colorOnPrimary</item>
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="AppThemeActionBar" parent="Theme.MaterialComponents.DayNight">
+        <item name="actionBarTheme">@style/ColorPrimaryWhite</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?colorOnPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="colorSecondary">@color/black</item>
+
+    </style>
+
+    <style name="ColorPrimaryWhite" parent="">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="ColorPrimaryBlack" parent="">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="ColorSecondaryBlack" parent="">
+        <item name="colorSecondary">@color/black</item>
+    </style>
+
+    <style name="CalendarHeaderCustomStyle" parent="">
+        <item name="colorSecondary">@color/black</item>
+        <item name="android:headerMonthTextAppearance">@style/HeaderTextStyle</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeaderTextStyle2" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/ButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

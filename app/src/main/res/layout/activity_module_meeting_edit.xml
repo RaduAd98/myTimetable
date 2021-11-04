@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".login.LoginActivity">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/spinner_rooms"
+            android:text="@string/textview_room"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner_rooms"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/textView_rooms"
+            android:layout_marginHorizontal="16dp"
+            android:spinnerMode="dialog"
+            android:theme="@style/ColorSecondaryBlack"
+            app:boxBackgroundMode="outline" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_rooms"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/date_picker"
+            android:text="@string/textview_day"
+            android:textSize="14sp" />
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_date"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_picker"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/spinner_hours"
+            android:text="@string/textview_hour"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner_hours"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/textView_hours"
+            android:layout_marginHorizontal="16dp"
+            android:spinnerMode="dialog"
+            android:theme="@style/ColorSecondaryBlack"
+            app:boxBackgroundMode="outline" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_edit_module_meeting"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/spinner_hours"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/update_timetable"
+            android:theme="@style/ColorPrimaryBlack" />
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</ScrollView>

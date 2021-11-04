@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher_main.ui.add_module.AddModuleFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_module_name_add_page"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="51dp"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_module_name"
+            android:inputType="textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spinner_course_name_add_page"
+        android:layout_marginStart="32dp"
+        android:labelFor="@id/spinner_course_name_add_page"
+        android:text="@string/hint_course_name"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_course_name_add_page"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/layout_module_name_add_page"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="51dp"
+        android:spinnerMode="dialog"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spinner_semester_name_add_page"
+        android:layout_marginStart="32dp"
+        android:layout_toStartOf="@id/spinner_credits_number_add_page"
+        android:labelFor="@id/spinner_semester_name_add_page"
+        android:text="@string/textview_semester"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_semester_name_add_page"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/spinner_course_name_add_page"
+        android:layout_marginStart="32dp"
+        android:layout_toStartOf="@id/spinner_credits_number_add_page"
+        android:spinnerMode="dialog"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spinner_credits_number_add_page"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:labelFor="@id/spinner_credits_number_add_page"
+        android:text="@string/hint_credits"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_credits_number_add_page"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/spinner_course_name_add_page"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spinner_credits_number_add_page"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/spinner_credits_number_add_page"
+        android:labelFor="@id/spinner_compulsory_add_page"
+        android:text="@string/hint_compulsory"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_compulsory_add_page"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/spinner_course_name_add_page"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/spinner_credits_number_add_page"
+        android:spinnerMode="dialog"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_module_add_page"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/spinner_compulsory_add_page"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_add_module" />
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

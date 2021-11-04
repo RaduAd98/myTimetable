@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.ListModuleActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_module_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:labelFor="@id/spinner_modules"
+        android:text="@string/textview_module"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_modules"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_module_name"
+        android:layout_marginHorizontal="32dp"
+        android:spinnerMode="dialog"
+        android:theme="@style/ColorSecondaryBlack"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_modules"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/spinner_rooms"
+        android:text="@string/textview_room"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_rooms"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_rooms"
+        android:layout_marginHorizontal="32dp"
+        android:spinnerMode="dialog"
+        android:theme="@style/ColorSecondaryBlack"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_rooms"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/spinner_groups"
+        android:text="@string/textview_group"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_groups"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_groups"
+        android:layout_marginStart="32dp"
+        android:layout_toStartOf="@id/button_listView_students"
+        android:spinnerMode="dialog"
+        android:theme="@style/ColorSecondaryBlack"
+        app:boxBackgroundMode="outline" />
+
+    <ImageButton
+        android:id="@+id/button_listView_students"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_groups"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/content_description_students"
+        app:srcCompat="@drawable/ic_outline_people_24" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_semesters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_groups"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/spinner_semesters"
+        android:text="@string/textview_semester"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_semesters"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_semesters"
+        android:layout_marginHorizontal="32dp"
+        android:spinnerMode="dialog"
+        android:theme="@style/ColorSecondaryBlack"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_semesters"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/spinner_days"
+        android:text="@string/textview_day"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_days"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_days"
+        android:layout_marginHorizontal="32dp"
+        android:spinnerMode="dialog"
+        android:theme="@style/ColorSecondaryBlack"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_days"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/spinner_hours"
+        android:text="@string/textview_hour"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner_hours"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/textView_hours"
+        android:layout_marginHorizontal="32dp"
+        android:spinnerMode="dialog"
+        android:theme="@style/ColorSecondaryBlack"
+        app:boxBackgroundMode="outline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_module"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/spinner_hours"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/update_timetable"
+        android:theme="@style/ColorPrimaryBlack" />
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

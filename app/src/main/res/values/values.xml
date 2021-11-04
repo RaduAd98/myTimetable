@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hours">
+        <item>09:00 – 11:00</item>
+        <item>11:00 – 13:00</item>
+        <item>13:00 – 15:00</item>
+        <item>15:00 – 17:00</item>
+        <item>17:00 – 19:00</item>
+        <item>19:00 – 21:00</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string-array name="semesters">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="credits">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="compulsory">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

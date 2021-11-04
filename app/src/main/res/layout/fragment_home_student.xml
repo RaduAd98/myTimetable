@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher_main.ui.home.HomeFragment">
+
+    <ImageButton
+        android:id="@+id/button_previous_date"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_date_picker"
+        android:layout_alignBottom="@id/textView_date_picker"
+        android:layout_toStartOf="@id/textView_date_picker"
+        android:contentDescription="@string/hint_previous_date"
+        app:srcCompat="@drawable/ic_outline_arrow_back_ios_24" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_date_picker"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="?colorPrimary"
+        android:textSize="20sp"
+        tools:text="Wednesday,\n30 September">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <ImageButton
+        android:id="@+id/button_next_date"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_date_picker"
+        android:layout_alignBottom="@id/textView_date_picker"
+        android:layout_toEndOf="@id/textView_date_picker"
+        android:contentDescription="@string/hint_next_date"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_outline_arrow_forward_ios_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendar_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_date_picker"
+        android:overScrollMode="never" />
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
